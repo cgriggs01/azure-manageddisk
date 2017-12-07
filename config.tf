@@ -11,7 +11,7 @@ resource "azurerm_resource_group" "module-testing" {
 module "manageddisk" {
     source = "Azure/manageddisk/azurerm"
 
-    disk_size_gb = "0"
+    disk_size_gb = "2"
     image_reference_id = ""
     import_or_copy_os_type = "Linux"
     managed_disk_name = "test-manageddisk"
